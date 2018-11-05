@@ -1,0 +1,13 @@
+<h1>Result</h1>
+
+<p><%= @message.html_safe %></p>
+<p>
+  You scored <%= @score %> points for this round.<br/>
+  Your total for this session is: <%= session[:score] %>.
+</p>
+
+<br />
+
+<%= link_to "Play Again", new_path, class: "btn btn-primary" %>
+<span> &nbsp; </span>
+<%= link_to "Reset Score", reset_path, class: "btn btn-danger" %>
